@@ -5,7 +5,7 @@ namespace Creatomate;
 /**
  * Options that can be used with \Creatomate\Client. See https://creatomate.com/docs/api/rest-api/post-v1-renders.
  */
-final class SourceProperties
+final class RenderOptions
 {
   /**
    * The output format of the render, which can be jpg, png, gif, or mp4. If it's not set, the template's output_format
@@ -17,7 +17,7 @@ final class SourceProperties
    * The frame rate of the rendered video, which can be 1 to 60 fps for mp4, and 1 to 15 for gif. Do not provide this
    * parameter when rendering a jpg or png.
    */
-  public const FRAME_RATE = 'framerate';
+  public const FRAME_RATE = 'frame_rate';
 
   /**
    * The scale at which you want your render to be in relation to the template. The default value is 1.0 (100%), which
